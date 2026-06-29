@@ -1,0 +1,19 @@
+/* TODO: Estilos del login */
+
+/*! -------------- */
+/*! Sección: Logo */
+/*! -------------- */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; justify-content: center;
+}
+/* Logo icon */
+.logo .icon {
+    width: 64px; height: auto;
+}
+/* Logo text */
+.logo .text {
+    width: 148px; height: auto;
+    margin-top: 0.5rem;
+}

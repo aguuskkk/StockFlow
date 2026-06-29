@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | StockFlow</title>
+    <!--* Estilo general -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!--* Estilo de login -->
+    <link rel="stylesheet" href="../assets/css/login/logo.css">
+    <linK rel="stylesheet" href="../assets/css/login/form-login.css">
 </head>
 <body>
-    
+    <main>
+        <!--! ------------- -->
+        <!--! Sección logo -->
+        <!--! ------------- -->
+        <section class="logo">
+            <img class="icon" src="../assets/img/logo-icon.svg">
+            <img class="text" src="../assets/img/logo-text.svg">
+        </section>
+
+        <section class="form-login">
+            <h1>Iniciar sesión</h1>
+            <p>ingresa tus datos para iniciar sesión</p>
+            <!--! ------------- -->
+            <!--! Sección form -->
+            <!--! ------------- -->
+            <form>
+                <!-- Correo -->
+                <div class="login-correo">
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="correo.gmail.com">
+                </div>
+                <!-- Contraseña -->
+                <div class="login-password">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="******">
+                </div>
+                <!-- Boton submit -->
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
