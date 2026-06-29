@@ -1,0 +1,37 @@
+/* TODO: Estilos para el footer de la página de login */
+
+/** ========================== */
+/** Mobile First               */
+/** ========================== */
+
+/*? ===== FOOTER ===== */
+footer {
+    display: flex; 
+    align-items: center; justify-content: center;
+    height: 133px;
+    margin-top: 2rem;
+}
+/*? ===== FOOTER CONTAINER ===== */
+.container-foot {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*? ===== FOOTER BUTTONS ===== */
+.btn-español, .btn-english {
+    border: none;
+    background-color: white; color: black;
+    font-size: 14px; font-weight: 400;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+}
+
+.btn-español:hover, .btn-english:hover {
+    transform: scale(1.05);
+    color: gray;
+}
+
+.btn-español img, .btn-english img {
+    width: 16px;
+    margin-right: 6px;
+}

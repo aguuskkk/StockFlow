@@ -3,44 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | StockFlow</title>
-    <!--* Estilo general -->
+    <title>StockFlow - Login</title>
+    <!-- ===== ICONOS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- ===== CSS - GENERAL ===== -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <!--* Estilo de login -->
-    <link rel="stylesheet" href="../assets/css/login/logo.css">
-    <linK rel="stylesheet" href="../assets/css/login/form-login.css">
+    <!-- ===== CSS - HEADER ===== -->
+    <link rel="stylesheet" href="../assets/css/login/login-header.css">
+    <!-- ===== CSS - MAIN ===== -->
+    <link rel="stylesheet" href="../assets/css/login/login-main.css">
+    <!-- ===== CSS - FOOTER ===== -->
+    <link rel="stylesheet" href="../assets/css/login/login-footer.css">
 </head>
 <body>
-    <main>
-        <!--! ------------- -->
-        <!--! Sección logo -->
-        <!--! ------------- -->
-        <section class="logo">
-            <img class="icon" src="../assets/img/logo-icon.svg">
-            <img class="text" src="../assets/img/logo-text.svg">
-        </section>
+    <!--* ===== HEADER ===== -->
+    <header>
+        <img class="icon" src="../assets/img/logo-icon.svg" alt="logo">
+        <img class="text" src="../assets/img/logo-text.svg">
+    </header>
 
-        <section class="form-login">
-            <h1>Iniciar sesión</h1>
-            <p>ingresa tus datos para iniciar sesión</p>
-            <!--! ------------- -->
-            <!--! Sección form -->
-            <!--! ------------- -->
-            <form>
-                <!-- Correo -->
-                <div class="login-correo">
-                    <label>Correo electrónico</label>
-                    <input type="email" placeholder="correo.gmail.com">
+    <!--* ===== MAIN ===== -->
+    <main>
+        <!-- ===== Login Titulo ===== -->
+        <section class="section-title">
+            <h2>Iniciar Sesión</h2>
+            <p>Ingresa tus datos para iniciar sesión</p>
+        </section>
+        <!-- ===== Login Form ===== -->
+        <section class="section-form">
+            <div class="form-correo">
+                <h2>Correo electrónico</h2>
+                <div class="correo-group">
+                    <i class="fa-regular fa-envelope fa-2xs" style="color: #5c5c5c93;"></i>
+                    <input type="email" placeholder="ejemplo@mail.com">
                 </div>
-                <!-- Contraseña -->
-                <div class="login-password">
-                    <label>Contraseña</label>
-                    <input type="password" placeholder="******">
+            </div>
+            <div class="form-contraseña">
+                <h2>Contraseña</h2>
+                <div class="contraseña-group">
+                    <i class="fa-solid fa-unlock-keyhole fa-2xs" style="color: #5c5c5c8f;"></i>
+                    <input type="password" placeholder="Ingresa tu contraseña">
                 </div>
-                <!-- Boton submit -->
-                <button type="submit">Iniciar sesión</button>
-            </form>
+            </div>
+        </section>
+        <!-- ===== Login Button ===== -->
+        <section class="section-btn">
+            <button>Iniciar Sesión</button>
+            <div class="divider">
+                <div></div>
+                <label>o</label>
+                <div></div>
+            </div>
+            <a href="#">¿Olvidaste tu contraseña?</a>
         </section>
     </main>
+
+    <!--* ===== FOOTER ===== -->
+    <footer>
+        <div class="container-foot">
+            <button class="btn-español"><img src="../assets/img/icons/es.svg">Español</button>
+            <button class="btn-english"><img src="../assets/img/icons/um.svg"> English</button>
+        </div>
+    </footer>
 </body>
 </html>

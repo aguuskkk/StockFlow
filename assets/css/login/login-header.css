@@ -1,0 +1,21 @@
+/* TODO: Estilos para el header de la página de login */
+
+/** ========================== */
+/** Mobile First               */
+/** ========================== */
+
+/*? ===== LOGIN HEADER ===== */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    min-height: 75px; height: 100px; max-height: 200px;
+    margin-top: 45px;
+}
+
+header .icon {
+    width: 64px; height: auto;
+}
+header .text {  
+    width: 148px; height: auto;
+}

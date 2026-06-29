@@ -1,0 +1,108 @@
+/* TODO: Estilos para el main de la página de login */
+
+/** ========================== */
+/** Mobile First               */
+/** ========================== */
+
+/*? ===== LOGIN MAIN ===== */
+main {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 2rem;
+}
+
+/*? ===== LOGIN TITLE ===== */
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* H2 */
+.section-title h2 {
+    font-size: 1.2rem; font-weight: bold;
+}
+/* P */
+.section-title p {
+    font-size: 1rem;
+    color: #828282;
+}
+
+/*? ===== LOGIN FORM ===== */
+.section-form {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+/* Div correo y contraseña */
+.form-correo, .form-contraseña {
+    display: flex; flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+/* Groups */
+.correo-group, .contraseña-group {
+    display: flex; flex-direction: column;
+    position: relative;
+}
+/* Iconos */
+.correo-group i , .contraseña-group i {
+    position: absolute; top: 50%; left: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding-left: 12px;
+}
+/* H2 */
+.form-contraseña h2, .form-correo h2 {
+    font-size: 14px; font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+/* Inputs */
+.correo-group input, .contraseña-group input {
+    width: 327px; height: 40px;
+    border: 1.5px solid #E0E0E0; border-radius: 8px;
+    padding: 16px 16px 16px 40px;
+    transition: all 0.2s ease;
+}
+.correo-group input:focus, .contraseña-group input:focus {
+    outline: none; border-color: var(--acento);
+}
+
+/*? ===== LOGIN BUTTON ===== */
+.section-btn {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    gap: 1rem;
+}
+/* Button */
+.section-btn button {
+    width: 327px; height: 40px;
+    border: none; border-radius: 8px;
+    margin-top: 1.5rem;
+    background-color: var(--acento); color: white;
+    font-size: 14px; font-weight: bold;
+    transition: all 0.2s ease;
+}
+.section-btn button:hover {
+    background-color: #7C3AED;
+}
+/* Divider */
+.divider {
+    display: flex; align-items: center;
+    gap: 0.5rem;
+}
+/* Divider label */
+.divider label {
+    font-size: 14px; font-weight: bold;
+    color: #828282;
+}
+/* Divider div */
+.divider div {
+    width: 151px; height: 1px;
+    background-color: #E6E6E6;
+}
+/* link */
+.section-btn a {
+    font-size: 14px; font-weight: bold;
+    color: #828282;
+    text-decoration: none;
+}
+.section-btn a:hover {
+    text-decoration: underline;
+}
