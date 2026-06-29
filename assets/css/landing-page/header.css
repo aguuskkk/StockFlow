@@ -1,0 +1,24 @@
+/* TODO: Etilos del header */
+
+/*! -------------- */
+/*! Sección: Header */
+/*! -------------- */
+header {
+    display: flex;
+    max-height: 100px; height: fit-content; min-height: 75px;
+    width: 100%; max-width: 100%; min-width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Icono logo */
+header .header-icon {
+    width: 48px; height: auto;
+    padding-left: 0.5rem;
+}
+
+/* Texto logo */
+header .header-txt {
+    width: 128px; height: auto;
+    padding-left: 0.5rem;
+}

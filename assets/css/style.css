@@ -1,0 +1,29 @@
+/* TODO: Estilos generales */
+
+/*! Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --acento: #b46bfc;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+body {
+    font-family: Roboto;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fcf9ff 60%,
+        #f5ecff 80%,
+        #e3c8ff 100%
+    );
+}   

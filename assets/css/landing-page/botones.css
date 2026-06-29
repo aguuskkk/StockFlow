@@ -1,0 +1,45 @@
+/* TODO: Estilos de los botones */
+
+/*! --------------- */
+/*! Sección: Botones */
+/*! --------------- */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+    gap: 1rem;
+    z-index: 1;
+}
+/* Btn estilo general*/
+.btn-uno, .btn-dos {
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+/* Icono */
+.btn-uno i, .btn-dos i {
+    margin-left: 0.5rem;
+}
+/*! Boton uno */
+.btn-uno {
+    border: none;
+    background-color: var(--acento); color: white;
+    font-size: 1rem; font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+/* Boton uno hover */
+.btn-uno:hover{
+    transform: scale(1.05);
+}
+
+/*! Boton dos */
+.btn-dos {
+    border: 1.5px solid rgb(55, 44, 65);
+    background-color: white;
+    font-size: 1rem; font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+/* Boton dos hover */
+.btn-dos:hover{
+    border: 1.5px solid var(--acento);
+    transform: scale(1.05);
+}
