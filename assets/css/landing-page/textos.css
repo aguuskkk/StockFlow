@@ -1,5 +1,15 @@
 /* TODO: Estilos de los textos */
 
+body {
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fcf9ff 60%,
+        #f5ecff 80%,
+        #e3c8ff 100%
+    );
+}
 
 /*! -------------- */
 /*! Sección: Hero */
