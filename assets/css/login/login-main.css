@@ -49,7 +49,7 @@ main {
     padding-left: 12px;
 }
 /* H2 */
-.form-contraseña h2, .form-correo h2 {
+.form-contraseña label, .form-correo label {
     font-size: 14px; font-weight: bold;
     margin-bottom: 0.3rem;
 }

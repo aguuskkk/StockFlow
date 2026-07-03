@@ -1,0 +1,57 @@
+/* TODO: Estilo del header dashboard */
+
+/*! ----- Header ----- */
+header {
+    display: flex;
+    align-items: center;
+    min-height: 75px; height: 85px; max-height: 100px;
+    padding: 1rem;
+    background-color: var(--acento);
+}
+
+/*! ----- Config ----- */
+header .settings {
+    display: flex;
+    align-items: center; justify-content: center;
+    height: 100%; width: 10%;
+}
+header .settings i {
+    font-size: 1.5rem;
+}
+
+/*! ----- Logo ----- */
+header .logo {
+    display: flex;
+    align-items: center; justify-content: center;
+    height: 100%; width: 80%;
+}
+header .logo h1 {
+    font-size: 1.6rem; font-weight: 600;
+    color: white;
+}
+
+/*! ----- Notificación ----- */
+header .noti {
+    display: flex;
+    align-items: center; justify-content: center;
+    height: 100%; width: 10%;
+    position: relative;
+}
+header .noti i {
+    font-size: 1.5rem;
+}
+header .noti .noti-num {
+    position: absolute;
+    top: 0px; right: 0px;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 900;
+    color: white;
+}
+header .noti .noti-num p {
+    font-size: 14px; font-weight: 900;
+    color: white;
+}

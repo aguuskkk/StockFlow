@@ -18,20 +18,21 @@ footer {
 }
 
 /*? ===== FOOTER BUTTONS ===== */
-.btn-español, .btn-english {
+.btn-idioma {
     border: none;
-    background-color: white; color: black;
-    font-size: 14px; font-weight: 400;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
     padding: 8px 16px;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
-
-.btn-español:hover, .btn-english:hover {
+.btn-idioma:hover {
     transform: scale(1.05);
     color: gray;
 }
-
-.btn-español img, .btn-english img {
+.btn-idioma img {
     width: 16px;
     margin-right: 6px;
 }
