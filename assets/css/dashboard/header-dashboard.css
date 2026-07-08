@@ -1,0 +1,56 @@
+/* ============================================================
+   HEADER - DASHBOARD (mobile first)
+=============================================================== */
+
+.dashboard-header {
+  display: flex;
+  align-items: center; justify-content: space-between;
+  padding: 0.5rem 1rem;
+  min-height: 60px;
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Botón hamburguesa */
+.dashboard-header_menu {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* Logo */
+.dashboard-header_logo {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: white;
+}
+
+/* Bontón notificaciones */
+.dashboard-header_notifications{
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: var(--font-size-xl);
+  display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* Badge */
+.dashboard-header_notifications .badge {
+  position: absolute;
+  top: 8px; right: 18px;
+  background-color: var(--color-danger);
+  color: white;
+  font-size: var(--font-size-xs);
+  min-height: 20px; height: 20px;
+  border-radius: var(--border-radius-full);
+  display: flex;
+  justify-content: center; align-items: center;
+  padding: 0 4px;
+}

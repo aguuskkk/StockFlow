@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!--* Estilo de icono -->
+    <!-- ---- Iconos ----- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <!--* Estilos generales -->
+    <!-- ----- Styles ----- -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <!--* Estilo Header -->
-    <link rel="stylesheet" href="../assets/css/dashboard/dashboard-header.css">
+    <!-- ----- Header ----- -->
+    <link rel="stylesheet" href="../assets/css/dashboard/header-dashboard.css">
 </head>
 <body>
-    <!--! ------------------ -->
-    <!--! ----- Header ----- -->
-    <!--! ------------------ -->
-    <header>
-        <!-- Sección de configuración -->
-        <div class="settings">
+    <!------------------------->
+    <!-- Header --------------->
+    <!------------------------>
+    <header class="dashboard-header">
+        <!-- Botón hamburguesa-->
+        <button class="dashboard-header_menu">
             <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i>
-        </div>
-        <!-- Sección del logo -->
-        <div class="logo">
-            <h1>StockFlow</h1>
-        </div>
-        <!-- Sección de notificaciónes -->
-        <div class="noti">
+        </button>
+        <!-- Logo -->
+        <div class="dashboard-header_logo">StockFlow</div>
+        <!-- Botón notificaciones -->
+        <button class="dashboard-header_notifications">
             <i class="fa-solid fa-bell" style="color: rgb(255, 255, 255);"></i>
-            <div class="noti-num">+9</div>
-        </div>
+            <span class="badge">9</span><!-- Numero de notificaciones -->
+        </button>
     </header>
 </body>
 </html>
