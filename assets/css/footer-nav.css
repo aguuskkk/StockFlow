@@ -1,0 +1,39 @@
+/*-- ============================================================
+   Navegación barra - footer (mobile first)
+=============================================================== */
+
+.footer-nav {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid lightgray;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    z-index: 1000;
+    
+}
+
+.footer-nav_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid #e0e0e0; 
+}
+
+.footer-nav_btn i {
+    font-size: var(--font-size-base);
+}
+
+
+.footer-nav_btn label {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: rgb(63, 63, 63);
+}

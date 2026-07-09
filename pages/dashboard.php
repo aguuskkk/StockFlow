@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../assets/css/dashboard/dashboard-main/cards.css"> <!-- (Sección de cards)-->
     <link rel="stylesheet" href="../assets/css/dashboard/dashboard-main/table.css"> <!-- (Sección tabla stock bajo)-->
     <link rel="stylesheet" href="../assets/css/dashboard/dashboard-main/product.css"> <!-- (Sección de prodcutos más vendidos)-->
+    <!-- ----- Footer ----- -->
+    <link rel="stylesheet" href="../assets/css/footer-nav.css">
 </head>
 <body>
     <!------------------------->
@@ -124,7 +126,7 @@
         </section>
 
         <!------------------------------->
-        <!-- 3. Productos más vendidos -->
+        <!-- 4. Productos más vendidos -->
         <!------------------------------->
 
         <section class="dashboard-product">
@@ -160,6 +162,11 @@
                 </div>
             </div>
         </section>
+
+        <!------------------------------->
+        <!-- 5. Barra de nav (footer)---->
+        <!------------------------------->
+        <?php include '../includes/footer-nav.php'; ?>
     </main>
 </body>
 </html>
