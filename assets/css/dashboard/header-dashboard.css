@@ -29,6 +29,7 @@
   font-size: var(--font-size-xl);
   font-weight: bold;
   color: white;
+  user-select: none;
 }
 
 /* Bontón notificaciones */
@@ -37,6 +38,7 @@
   border: none;
   padding: 0.5rem;
   font-size: var(--font-size-xl);
+  cursor: pointer;
   display: flex;
   align-items: center; justify-content: center;
 }

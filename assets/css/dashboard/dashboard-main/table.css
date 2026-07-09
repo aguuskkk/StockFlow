@@ -1,0 +1,84 @@
+/* ============================================================
+   TABLE - DASHBOARD (mobile first)
+=============================================================== */
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+    text-align: left;
+    background-color: white;
+}
+
+/*titulo */
+.dashboard-content_stock h2 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: black;
+}
+
+/* Contenedor de la tabla */
+.dashboard-content_table {
+    width: 100%; height: 100%;
+    background-color: white;
+}
+/* Tabla */
+.dashboard-content_table table {
+    width: 100%; height: 100%;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    border-radius: var(--border-radius-sm);
+}
+/* Encabezado */
+.dashboard-content_table thead {
+    border-bottom: 1px solid #b8b8b8;
+}
+/* Celdas de encabezado*/
+.dashboard-content_table th {
+    padding: 0.75rem 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4a5568;
+    white-space: nowrap;
+}
+/* Celdas del body*/
+.dashboard-content_table tbody td {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #edf2f7;
+    color: #2d3748;
+    vertical-align: middle;
+}
+/* Al pasar por arriba */
+.dashboard-content_table tbody tr:hover {
+    background-color: #f0f4ff;
+    transition: background-color 0.2s ease;
+}
+
+/* Botón de reponer */
+.btn-reponer {
+    background-color: var(--color-info);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    padding: 0.3rem 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+}
+.btn-reponer:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.02);
+    box-shadow: 0 2px 4px rgba(49, 130, 206, 0.3);
+}
+.btn-reponer:active {
+    transform: scale(0.95);
+}
+

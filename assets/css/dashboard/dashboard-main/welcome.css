@@ -1,0 +1,28 @@
+/* ============================================================
+   WELCOME - DASHBOARD (mobile first)
+=============================================================== */
+
+.dashboard-main_welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem; padding-left: 1rem;
+    user-select: none;
+    background-color: white;
+}
+
+/* Mensaje de bienvenida (titulo) */
+.dashboard-main_welcome .title {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    color: black;
+    padding: 0 0.5rem;
+}
+
+/* Sub-titulo */
+.dashboard-main_welcome .sub-title {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    padding: 0 0.5rem;
+    color: darkgray;
+}
