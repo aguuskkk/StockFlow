@@ -4,12 +4,12 @@
 
 <footer class="footer-nav">
     <!-- Botón Inicio -->
-    <button class="footer-nav_btn">
+    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/dashboard.php'">
         <i class="fa-solid fa-house" style="color: rgb(63, 63, 63);"></i>
         <label>Inicio</label>
     </button>
     <!-- Botón Inventario -->
-    <button class="footer-nav_btn">
+    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/inventario.php'">
         <i class="fa-solid fa-box" style="color: rgb(63, 63, 63);"></i>
         <label>Inventario</label>
     </button>
