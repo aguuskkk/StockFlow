@@ -18,7 +18,7 @@
     <!-- ----- Footer ----- -->
     <link rel="stylesheet" href="../assets/css/footer-nav.css">
 </head>
-<body>
+<body>  
     <!------------------------->
     <!-- Header --------------->
     <!------------------------>

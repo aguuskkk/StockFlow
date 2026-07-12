@@ -9,12 +9,12 @@
         <label>Inicio</label>
     </button>
     <!-- Botón Inventario -->
-    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/inventario.php'">
+    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/inventory.php'">
         <i class="fa-solid fa-box" style="color: rgb(63, 63, 63);"></i>
         <label>Inventario</label>
     </button>
     <!-- Botón Ventas -->
-    <button class="footer-nav_btn">
+    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/sales.php'">
         <i class="fa-solid fa-cart-shopping" style="color:rgb(63, 63, 63);"></i>
         <label>Ventas</label>
     </button>
