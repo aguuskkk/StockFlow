@@ -22,7 +22,7 @@
 /*! Boton uno */
 .btn-uno {
     border: none;
-    background-color: var(--acento); color: white;
+    background-color: var(--color-primary); color: white;
     font-size: 1rem; font-weight: 600;
     transition: all 0.3s ease-in-out;
 }
@@ -40,6 +40,6 @@
 }
 /* Boton dos hover */
 .btn-dos:hover{
-    border: 1.5px solid var(--acento);
+    border: 1.5px solid var(--color-primary);
     transform: scale(1.05);
 }

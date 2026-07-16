@@ -6,5 +6,5 @@ btnMore.className = 'btn-dos';
 
 // Al hacer click ir a login.html
 btnLogin.addEventListener('click', () => {
-    window.location.href = 'login.html';
+    window.location.href = '/pages/login.html';
 });

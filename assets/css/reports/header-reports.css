@@ -1,0 +1,58 @@
+/* ============================================================
+   HEADER - REPORTES (mobile first)
+=============================================================== */
+
+.reports-header {
+  display: flex;
+  align-items: center; justify-content: space-between;
+  padding: 0.5rem 1rem;
+  min-height: 60px;
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Botón hamburguesa */
+.reports-header_menu {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* Logo */
+.reports-header_logo {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: white;
+  user-select: none;
+}
+
+/* Bontón notificaciones */
+.reports-header_notifications{
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* Badge */
+.reports-header_notifications .badge {
+  position: absolute;
+  top: 8px; right: 18px;
+  background-color: var(--color-danger);
+  color: white;
+  font-size: var(--font-size-xs);
+  min-height: 20px; height: 20px;
+  border-radius: var(--border-radius-full);
+  display: flex;
+  justify-content: center; align-items: center;
+  padding: 0 4px;
+}

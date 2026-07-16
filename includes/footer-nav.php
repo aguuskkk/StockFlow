@@ -19,12 +19,12 @@
         <label>Ventas</label>
     </button>
     <!-- Botón Gastos -->
-    <button class="footer-nav_btn">
+    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/bills.php'">
         <i class="fa-solid fa-dollar-sign" style="color: rgb(63, 63, 63)"></i>
         <label>Gastos</label>
     </button>
     <!-- Botón Reportes -->
-    <button class="footer-nav_btn">
+    <button type="button" class="footer-nav_btn" onclick="window.location.href = '../pages/reports.php'">
         <i class="fa-solid fa-file-circle-exclamation" style="color:rgb(63, 63, 63);"></i>
         <label>Reportes</label>
     </button>
