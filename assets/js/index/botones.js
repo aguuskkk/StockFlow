@@ -6,5 +6,5 @@ btnMore.className = 'btn-more'
 
 // Ir a la pagina del login
 btnLogin.addEventListener('click', () => {
-    window.location.href = 'pages/login.html'
+    window.location.href = 'views/login.html'
 });

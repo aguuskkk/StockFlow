@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 showError(input, error, 'El correo es obligatorio.');
                 return false;
             }
+            if (value.length >= 256) {
+                showError(input, error, 'Demasiado largo.');
+                return false;
+            }
             if (!validateEmail(value)) {
                 showError(input, error, 'Correo inválido.');
                 return false;
@@ -40,13 +44,21 @@ document.addEventListener('DOMContentLoaded', function () {
             return true;
         }
 
+        // Validacr contraseña
         if (input.id === 'password') {
+            // Validar que no esté vacío
             if (value === '') {
                 showError(input, error, 'La contraseña es obligatoria.');
                 return false;
             }
-            if (value.length < 6) {
-                showError(input, error, 'Mínimo 6 caracteres.');
+            // Validar que tenga al menos 12 caracteres
+            if (value.length < 12) {
+                showError(input, error, 'Mínimo 12 caracteres.');
+                return false;
+            } 
+            // Validar que tenga menos de 256 caracteres
+            else if (value.length >= 256) {
+                showError(input, error, 'Demasiado largo.');
                 return false;
             }
             clearError(input, error);
