@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow · Dashboard</title>
+    <meta name="description" content="">
+    <!-- ----- Font Awesome ----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ----- Estilos ----- -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard/dashboard.css">
+</head>
+<body>
+    <!-- ---------- -->
+    <!--   Header   -->
+    <!-- ---------- -->
+    <header aria-label="Encabezado del dashboard" role="banner">
+        <!-- Botón hamburguesa -->
+        <button class="header-btn-hamburger" aria-label="Botón de navegación">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <!-- Logo -->
+        <div class="header-logo">
+            <a href="../index.html" aria-label="Volver al inicio de StockFlow">
+                StockFlow
+            </a>
+        </div>
+
+        <!-- Perfil y notificaciones -->
+        <div class="header-right">
+            <!-- Botón de notificaciones -->
+            <button class="header-btn-notifications" aria-label="Notificaciones">
+                <i class="fa-solid fa-bell" aria-hidden="true"></i>
+                <span class="badge">9</span>
+            </button>
+
+            <!-- Perfil de usuario -->
+            <div class="header-profile" aria-label="Perfil de usuario" style="display: none;">
+            </div>
+        </div>
+    </header>
+
+    <!-- -------- -->
+    <!--   Main   -->
+    <!-- -------- -->
+    <main role="main">
+        <!-- Bienvenida al usuario -->
+        <div class="section-welcome">
+            <h1 id="welcome-title" class="title">¡Hola, Agustin!</h1>
+            <p id="welcome-text" class="text">Resumen de tu inventario hoy</p>
+        </div>
+
+        <!-- Tarjetas de resumen  -->
+        <div class="section-cards" aria-label="Resumen de inventario">
+            <!-- Tarjeta 1: Productos totales -->
+            <article class="card" aria-label="Total de productos">
+                <i class="fa-solid fa-boxes-stacked" style="color: rgb(0, 0, 0);"></i>
+                <div class="card-info">
+                    <h3>Productos Totales</h3>
+                    <p>1,250</p>
+                </div>
+            </article>
+            <!-- Tarjeta 2: Productos Vendidos -->
+            <article class="card" aria-label="Productos vendidos">
+                <i class="fa-solid fa-shopping-cart" style="color: rgb(0, 0, 0);"></i>
+                <div class="card-info">
+                    <h3>Productos vendidos</h3>
+                    <p>1,250</p>
+                </div>
+            </article>
+            <!-- Tarjeta 3: Productos sin stock -->
+            <article class="card" aria-label="Productos sin stock">
+                <i class="fa-solid fa-circle-minus" style="color: rgb(0, 0, 0);"></i>
+                <div class="card-info">
+                    <h3>Productos sin stock</h3>
+                    <p>185</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Stock Bajo -->
+        <section class="section-content">
+            <!-- Título -->
+            <div class="content-title">
+                <h2>Stock bajo</h2>
+            </div>
+
+            <!-- Tabla de productos -->
+            <table class="content-table" aria-label="Productos con StockBajo">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Minimo</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Producto 1 -->
+                    <tr>
+                        <td data-label="Producto">Laptop Gamer</td>
+                        <td data-label="Stock">3</td>
+                        <td data-label="Minimo">10</td>
+                        <td data-label="Acción">
+                            <button class="btn-reponer" aria-label="Reponer el stock">
+                                Reponer
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Producto 2 -->
+                    <tr>
+                        <td data-label="Producto">Teclado Gaming</td>
+                        <td data-label="Stock">2</td>
+                        <td data-label="Minimo">10</td>
+                        <td data-label="Acción">
+                            <button class="btn-reponer" aria-label="Reponer el stock">
+                                Reponer
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Producto 3 -->
+                    <tr>
+                        <td data-label="Producto">Mouse Gaming</td>
+                        <td data-label="Stock">1</td>
+                        <td data-label="Minimo">10</td>
+                        <td data-label="Acción">
+                            <button class="btn-reponer" aria-label="Reponer el stock">
+                                Reponer
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
