@@ -111,7 +111,7 @@
                 </div>
 
                 <!-- Tarjetas de resumen  -->
-                <div class="section-cards" aria-label="Resumen de inventario">
+                <section class="section-cards" aria-label="Resumen de inventario">
                     <!-- Tarjeta 1: Productos totales -->
                     <article class="card" aria-label="Total de productos">
                         <i class="fa-solid fa-boxes-stacked" style="color: rgb(0, 0, 0);"></i>
@@ -136,7 +136,21 @@
                             <p>185</p>
                         </div>
                     </article>
-                </div>
+                </section>
+
+                <!-- Charts (Solo en escritorio)-->
+                <section class="section-chart" aria-label="Gráficos">
+                    <!-- Ventas -->
+                    <div class="chart-container">
+                        <h3>Ventas de los ultimos 7 días</h3>
+                        <canvas id="ventasChart" aria-label="Gráfico de ventas"></canvas>
+                    </div>
+                    <!-- Estado del stock -->
+                    <div class="chart-container">
+                        <h3>Estado del stock</h3>
+                        <canvas id="stockChart" aria-label="Gráfico de stock"></canvas>
+                    </div>
+                </section>
 
                 <!-- Stock Bajo -->
                 <section class="section-content">
@@ -198,5 +212,7 @@
 
     <!-- Scripts -->
     <script src="../assets/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Charts -->
+    <script src="../assets/js/dashboard/charts.js"></script>
 </body>
 </html>
