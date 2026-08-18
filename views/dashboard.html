@@ -88,10 +88,51 @@
                 <!-- Perfil y notificaciones -->
                 <div class="header-right">
                     <!-- Botón de notificaciones -->
-                    <button class="header-btn-notifications" aria-label="Notificaciones">
+                    <button class="header-btn-notifications" id="notifBtn" aria-label="Notificaciones">
                         <i class="fa-solid fa-bell" aria-hidden="true"></i>
                         <span class="badge">9</span>
                     </button>
+
+                    <!-- Panel de notificaciones (Aarece al hacer click) -->
+                    <section class="notifications-panel" id="notifPanel">
+                        <!-- Header de notificaciones -->
+                        <div class="notif-header">
+                            <span class="notif-title">Notificaciones</span>
+                            <button class="notif-mark-all" aria-label="Marcar todas las notificaciones como leídas">
+                                Marcar todas como leídas
+                            </button>
+                        </div>
+                        <!-- Notificaciones -->
+                        <ul class="notif-list">
+                            <li class="notif-item unread">
+                                <i class="fa-solid fa-box"></i>
+                                <div class="notif-content">
+                                    <p class="notif-text"><strong>Laptop Gamer</strong> está por debajo del stock mínimo.</p>
+                                    <span class="notif-time">Hace 5 minutos</span>
+                                </div>
+                            </li>
+                            <li class="notif-item unread">
+                                <i class="fa-solid fa-box"></i>
+                                <div class="notif-content">
+                                    <p class="notif-text"><strong>Teclado Gaming</strong> está por debajo del stock mínimo.</p>
+                                    <span class="notif-time">Hace 12 minutos</span>
+                            </li>
+                            <li class="notif-item unread">
+                                <i class="fa-solid fa-box"></i>
+                                <div class="notif-content">
+                                    <p class="notif-text"><strong>Mouse Gaming</strong> está por debajo del stock mínimo.</p>
+                                    <span class="notif-time">Hace 20 minutos</span>
+                                </div>
+                            </li>
+                            <li class="notif-item">
+                                <i class="fa-solid fa-box"></i>
+                                <div class="notif-content">
+                                    <p class="notif-text">Nueva venta de <strong>Laptop Gamer</strong> ha sido registrada.</p>
+                                    <span class="notif-time">Hace 30 minutos</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
 
                     <!-- Perfil de usuario -->
                     <div class="header-profile" aria-label="Perfil de usuario" style="display: none;">
@@ -213,5 +254,6 @@
     <script src="../assets/js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Charts -->
     <script src="../assets/js/dashboard/charts.js"></script>
+    <script src="../assets/js/notif.js"></script>
 </body>
 </html>
