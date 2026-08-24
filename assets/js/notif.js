@@ -14,6 +14,18 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Ocultar notificaciones al hacer click fuera
+notifPanel.addEventListener("click", (e) => {
+    if (e.target.id !== "notifPanel") {
+        notifPanel.classList.remove("active");
+    }
+});
+
+// Ocultar notificaciones si se presiona perfil
+document.getElementById("profileBtn").addEventListener("click", () => {
+    notifPanel.classList.remove("active");
+});
+
 // Si se presiona el menu, ocultar notificaciones
 document.getElementById("menu-btn").addEventListener("click", () => {
     notifPanel.classList.remove("active");
