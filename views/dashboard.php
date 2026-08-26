@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StockFlow · Dashboard</title>
-    <meta name="description" content="">
+    <meta name="description" content="Resumen diario de tu inventario">
     <!-- ----- Font Awesome ----- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ----- Estilos ----- -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dashboard/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
 </head>
 <body>
 
@@ -17,61 +18,7 @@
         <!-- -------- -->
         <!--   Menu   -->
         <!-- -------- -->
-        <aside class="menu" id="menu">
-            <!-- Logo-->
-            <a href="../index.html" class="logo">
-                <img src="../assets/img/logo/logo-text.svg" alt="Logo de StockFlow" class="logo-text">
-            </a>
-            <!-- Menu -->
-            <ul class="menu-list">
-                <!-- Dashboard -->
-                <li class="menu-item">
-                    <a href="#" class="menu-link">
-                        <i class="fa-solid fa-house" style="color: rgb(0, 0, 0);"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <!-- Inventario -->
-                <li class="menu-item">
-                    <a href="#" class="menu-link">
-                        <i class="fa-solid fa-box-open" style="color: rgb(0, 0, 0);"></i>
-                        <span>Inventario</span>
-                    </a>
-                </li>
-                <!-- Ventas -->
-                <li class="menu-item">
-                    <a href="#" class="menu-link">
-                        <i class="fa-solid fa-chart-line" style="color: rgb(0, 0, 0);"></i>
-                        <span>Ventas</span>
-                    </a>
-                </li>
-                <!-- Gastos -->
-                <li class="menu-item">
-                    <a href="#" class="menu-link">
-                        <i class="fa-solid fa-receipt" style="color: rgb(0, 0, 0);"></i>
-                        <span>Gastos</span>
-                    </a>
-                </li>
-                <!-- Reportes -->
-                <li class="menu-item">
-                    <a href="#" class="menu-link">
-                        <i class="fa-solid fa-file" style="color: rgb(0, 0, 0);"></i>
-                        <span>Reportes</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- Otras opciones -->
-            <div class="menu-options">
-                <button class="menu-btn-logout" aria-label="Cerrar sesión" title="Cerrar sesión">
-                    <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
-                </button>
-            </div>
-
-            <!-- Boton de cerrar menu solo moblie -->
-            <button id="menu-btn-close" class="menu-btn-close" aria-label="Cerrar menu" title="Cerrar menu">
-                <i class="fa-solid fa-xmark" aria-hidden="true"></i>            
-            </button>
-        </aside>
+        <?php include_once("../include/menu.php"); ?>
 
         <section class="page">
             <!-- ---------- -->
