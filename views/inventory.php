@@ -23,6 +23,66 @@
         <!-- -------- -->
         <?php include_once("../include/menu.php"); ?>
 
+        <!-- -------------------------- -->
+        <!--   Producto Nuevo (Panel)   -->
+        <!-- -------------------------- -->
+        <section class="panel-new" id="panel-new">
+            <!-- Cabecera del panel -->
+            <div class="panel-header">
+                <button class="quit-btn" id="btn-quit" aria-label="Cerrar ventana">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <h2>Nuevo producto</h2>
+            </div>
+
+            <!-- Contenido del panel -->
+            <div class="panel-content">
+                <form class="panel-form" action="#" method="post">
+                    <!-- Nombre del producto -->
+                    <div class="panel-name" aria-label="Nombre del producto">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Nombre del producto...">
+                    </div>
+                    <!-- Descripción del producto -->
+                    <div class="panel-description" aria-label="Descripción del producto">
+                        <label for="description">Descripción (Opcional)</label>
+                        <textarea id="description" name="description" placeholder="Descripción del producto..."></textarea>
+                    </div>
+                    <!-- Precio del producto y stock -->
+                    <div class="panel-price-stock" aria-label="Precio y stock del producto">
+                        <!-- Precio del producto -->
+                        <div class="panel-price">
+                            <label for="panel-price">Precio</label>
+                            <input type="number" id="panel-price" name="panel-price" placeholder="Precio del producto..." title="Precio del producto">
+                        </div>
+                        <!-- Stock del producto -->
+                        <div class="panel-stock">
+                            <label for="panel-stock">Stock</label>
+                            <div>
+                                <button type="button" class="minus-btn" id="minus-btn" aria-label="Disminuir stock del producto">
+                                    <i class="fa-solid fa-minus" aria-hidden="true"></i>
+                                </button>
+                                <input type="number" id="panel-stock" name="panel-stock" placeholder="Stock del producto..." title="Stock inicial del producto">
+                                <button type="button" class="plus-btn" id="plus-btn" aria-label="Aumentar stock del producto">
+                                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Etiquetas del producto -->
+                    <div class="panel-tags">
+                        <label for="panel-tags">Etiquetas (Opcional)</label>
+                        <input type="text" id="panel-tags" name="panel-tags" placeholder="Etiquetas del producto...">
+                    </div>
+                    <!-- Botón de agregar producto -->
+                    <button type="button" class="product-add-btn" id="product-btn-add" aria-label="Agregar producto">
+                        <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        Agregar
+                    </button>
+                </form>
+            </div>
+        </section>
+
         <!-- -------- -->
         <!--   Page   -->
         <!-- -------- -->
@@ -258,5 +318,6 @@
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/notif.js"></script>
     <script src="../assets/js/inven/order.js"></script>
+    <script src="../assets/js/inven/newpro.js"></script>
 </body>
 </html>
