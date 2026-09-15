@@ -1,6 +1,7 @@
 // Panel de nuevo producto
 const panelNew = document.getElementById("panel-new");
-const btnOpen = document.getElementById("add-btn");
+const btnOpen = document.getElementById("add-btn-mobile");
+const btnOpenDesktop = document.getElementById("add-btn-desktop");
 const btnSave = document.getElementById("product-btn-add");
 const btnQuit = document.getElementById("btn-quit");
 // Inputs
@@ -27,7 +28,7 @@ function resetForm() {
 function closePanel() {
     panelNew.classList.remove("active");
     btnOpen.classList.remove("active");
-    resetFormFields();
+    resetForm();
 }
 
 // Abrir panel de nuevo producto
@@ -47,6 +48,12 @@ function validateNonNegative(input) {
 btnOpen.addEventListener("click", () => {
     openPanel();
 });
+
+if (btnOpenDesktop) {
+    btnOpenDesktop.addEventListener("click", () => {
+        openPanel();
+    });
+}
 
 // Cerrar con botón de salir
 btnQuit.addEventListener("click", function() {

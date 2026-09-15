@@ -7,21 +7,21 @@
             <ul class="menu-list">
                 <!-- Dashboard -->
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="../views/dashboard.php" class="menu-link">
                         <i class="fa-solid fa-house" style="color: rgb(0, 0, 0);"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <!-- Inventario -->
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="../views/inventory.php" class="menu-link">
                         <i class="fa-solid fa-box-open" style="color: rgb(0, 0, 0);"></i>
                         <span>Inventario</span>
                     </a>
                 </li>
                 <!-- Ventas -->
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="../views/ventas.php" class="menu-link">
                         <i class="fa-solid fa-chart-line" style="color: rgb(0, 0, 0);"></i>
                         <span>Ventas</span>
                     </a>

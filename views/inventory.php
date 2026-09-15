@@ -211,14 +211,14 @@
             <!--   Main   -->
             <!-- -------- -->
             <main role="main">
-                <!-- Texto (Solo en escritorio) -->
-                <section class="section-text">
-                    <h2>Inventario</h2>
-                    <p>Lista de todos los productos que tienes en stock</p>
-                </section>
-
                 <!-- Contenido (Solo mobile) -->
                 <section class="section-content mobile">
+                    <!-- Texto -->
+                    <section class="section-text">
+                        <h2>Inventario</h2>
+                        <p>Lista de todos los productos que tienes en stock</p>
+                    </section>
+
                     <div class="content-sea">
                         <!-- Barra de busqueda y agregar producto -->
                         <div class="content-top">
@@ -230,7 +230,7 @@
                                 </button>
                             </search>
                             <!-- Agregar producto -->
-                            <button type="button" class="add-btn" id="add-btn" title="Agregar producto">
+                            <button type="button" class="add-btn" id="add-btn-mobile" title="Agregar producto">
                                 <i class="fa-solid fa-plus" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -309,6 +309,111 @@
                 </section>
 
                 <!-- Contenido (Solo escritorio) -->
+                <section class="section-content desktop">
+
+                    <!-- Texto -->
+                    <section class="section-text">
+                        <h2>Inventario</h2>
+                        <p>Lista de todos los productos que tienes en stock</p>
+                        <div class="content-top">
+                            <search class="search-input" aria-label="Buscar productos">
+                                <input type="text" placeholder="Buscar productos...">
+                                <button class="search-btn" aria-label="Buscar productos">
+                                    <i class="fa-solid fa-search" aria-hidden="true"></i>
+                                </button>
+                            </search>
+                            <button type="button" class="add-btn" id="add-btn-desktop" title="Agregar producto">
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>  
+                    </section>  
+
+                    <!-- Lista de productos -->
+                    <table class="table-list">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Stock</th>
+                                <th>Precio</th>
+                                <th>Categoría</th>
+                                <th>Estado</th>
+                                <th>Proveedor</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Laptop Gaming</td>
+                                <td>100</td>
+                                <td>$1000</td>
+                                <td>Gaming</td>
+                                <td>En Stock</td>
+                                <td>Laptop</td>
+                                <td>
+                                    <button class="btn-edit" aria-label="Editar producto">
+                                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn-delete" aria-label="Eliminar producto">
+                                        <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Laptop Gaming</td>
+                                <td>100</td>
+                                <td>$1000</td>
+                                <td>Gaming</td>
+                                <td>En Stock</td>
+                                <td>Laptop</td>
+                                <td>
+                                    <button class="btn-edit" aria-label="Editar producto">
+                                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn-delete" aria-label="Eliminar producto">
+                                        <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Laptop Gaming</td>
+                                <td>100</td>
+                                <td>$1000</td>
+                                <td>Gaming</td>
+                                <td>En Stock</td>
+                                <td>Laptop</td>
+                                <td>
+                                    <button class="btn-edit" aria-label="Editar producto">
+                                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn-delete" aria-label="Eliminar producto">
+                                        <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Laptop Gaming</td>
+                                <td>100</td>
+                                <td>$1000</td>
+                                <td>Gaming</td>
+                                <td>En Stock</td>
+                                <td>Laptop</td>
+                                <td>
+                                    <button class="btn-edit" aria-label="Editar producto">
+                                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn-delete" aria-label="Eliminar producto">
+                                        <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </section>
             </main>
         </section>
     </section>
