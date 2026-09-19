@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -135,6 +135,7 @@
                                 <div class="notif-content">
                                     <p class="notif-text"><strong>Teclado Gaming</strong> está por debajo del stock mínimo.</p>
                                     <span class="notif-time">Hace 12 minutos</span>
+                                </div>
                             </li>
                             <li class="notif-item unread">
                                 <i class="fa-solid fa-box"></i>
