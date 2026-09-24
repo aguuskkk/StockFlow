@@ -28,14 +28,14 @@
                 </li>
                 <!-- Gastos -->
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="../views/gastos.php" class="menu-link">
                         <i class="fa-solid fa-receipt" style="color: rgb(0, 0, 0);"></i>
                         <span>Gastos</span>
                     </a>
                 </li>
                 <!-- Reportes -->
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="../views/reportes.php" class="menu-link">
                         <i class="fa-solid fa-file" style="color: rgb(0, 0, 0);"></i>
                         <span>Reportes</span>
                     </a>
