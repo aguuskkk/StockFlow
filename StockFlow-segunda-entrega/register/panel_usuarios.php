@@ -37,7 +37,6 @@ $filas = $dao->getAll();
 <body>
     <h2>Bienvenido, <?php echo htmlspecialchars($nombre); ?></h2>
     <p>Tu rol: <span class="rol"><?php echo htmlspecialchars($rol); ?></span></p>
-
     <table border="1" cellpadding="8">
         <tr>
             <th>Id</th>
