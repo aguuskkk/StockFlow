@@ -34,6 +34,7 @@ $rol    = $_SESSION['rol'];
         <?php if ($rol === 'administrador'): ?>
             <a href="../register/panel_usuarios.php">Ver Usuarios</a>
             <a href="../register/registrar_usuarios.php">Ingresar nuevo usuario</a>
+            <a href="../views/dashboard.php">Ir al dashboard de verda :V</a>
 
         <?php elseif ($rol === 'vendedor'): ?>
             <a href="#">Registrar Venta</a>

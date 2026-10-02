@@ -59,7 +59,7 @@ $error = isset($_GET['error']) ? 'Email o Contraseña incorrectos.' : '';
     <?php endif; ?>
     
                 <!-- Formulario -->
-                <form class="login-form" id="LoginForm" action="procesar_login.php" method="POST" novalidate>
+                <form class="login-form" id="LoginForm" action="../procesadores/procesar_login.php" method="POST" novalidate>
                     <!-- Correo electrónico -->
                     <section class="form-group">
                         <label for="email">Correo electrónico</label>
@@ -82,7 +82,7 @@ $error = isset($_GET['error']) ? 'Email o Contraseña incorrectos.' : '';
                     </section>
 
                     <!-- Botón de enviar -->
-                    <button type="submit">Iniciar sesión</button>
+                    <button type="submit" class="btn-primary btn-login">Iniciar sesión</button>
 
                     <!-- Olvidaste la contraseña ¿? -->
                     <div class="divider">
@@ -113,5 +113,6 @@ $error = isset($_GET['error']) ? 'Email o Contraseña incorrectos.' : '';
         </div>
     </footer>
 
+ <script src="../assets/js/login/login.js"></script>
 </body>
 </html>
