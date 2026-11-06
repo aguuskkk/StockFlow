@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # StockFlow
 ### Sistema de gestión de stock, ventas y gastos
 
@@ -68,3 +69,6 @@ El sistema trabaja con tres roles: el **administrador** ve todo, el **vendedor**
 | Repositor | Dashboard (stock), Inventario y Ayuda de inventario |
 
 Las vistas y las APIs validan el rol en el servidor. Si intentás entrar a una sección sin permiso, ves la página de error 403.
+=======
+# StockFlow
+>>>>>>> a51af37f8c2b59107383f7782ac2c70d6e6a0eec

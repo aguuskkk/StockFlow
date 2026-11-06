@@ -82,13 +82,14 @@ if (isset($_SESSION['usuario_id'])) {
                     <button type="submit" class="btn-primary btn-login">Iniciar sesión</button>
 
                     <!-- Olvidaste la contraseña ¿? -->
+                    <!-- Futuras updates
                     <div class="divider">
                         <span></span>
                         <span>o</span>
                         <span></span>
                     </div>
                     <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
-
+                    -->
                 </form>
             </section>
         </section>
