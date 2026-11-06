@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # StockFlow
 ### Sistema de gestión de stock, ventas y gastos
 
