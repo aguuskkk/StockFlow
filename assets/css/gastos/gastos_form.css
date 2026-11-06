@@ -1,0 +1,114 @@
+/* ================================================
+    Formulario de gastos 
+===================================================*/
+
+.header-crear-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.header-crear-usuario a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-crear-usuario a:hover {
+    text-decoration: underline;
+}
+
+.header-crear-usuario i {
+    font-size: 1.5rem;
+}
+
+.header-crear-usuario span {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-crear-usuario {
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 100px);
+    padding: 1rem 0;
+}
+
+.form-crear-usuario h1 {
+    padding: 1rem;
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
+}
+
+/* Mensaje de error */
+.form-crear-usuario > p {
+    width: 350px;
+    max-width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #fee2e2;
+    font-weight: bold;
+    text-align: center;
+    color: #b91c1c !important;
+}
+
+.form-group {
+    display: flex;
+    width: 350px;
+    max-width: 90%;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+/* Cada campo (label + input/select) */
+.form-group > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group > div label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group > div input,
+.form-group > div select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn-crear-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-crear-usuario i {
+    font-size: 1rem;
+}
+
+.btn-crear-usuario span {
+    font-size: 1.5rem;
+}
+
+.btn-crear-usuario:hover {
+    filter: brightness(1.1);
+}

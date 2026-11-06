@@ -1,0 +1,33 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Configuración local y datos sensibles
+.env
+config/database.php.local
+
+# Logs y temporales
+*.log
+logs/
+tmp/
+temp/
+
+# Respaldos de base de datos (no subir datos reales)
+*.sql
+*.bak
+*.dump
+
+# Dependencias (si agregás algo en el futuro)
+vendor/
+node_modules/
+
+# Subidas de usuarios
+assets/uploads/*
+!assets/uploads/.gitkeep

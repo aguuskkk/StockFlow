@@ -1,0 +1,53 @@
+/* TODO: Estilos generales */
+
+/*! Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colores principlaes */
+  --color-primary: #b46bfc;
+  --color-primary-dark: #9a4ceb;
+  --color-primary-light: #d4a6ff;
+  --color-primary-bg: #f4edff;
+
+  /*Colores secundarios */
+  --color-secondary: #4dabf7;
+  --color-secondary-dark: #3b8ed9;
+  --color-secondary-light: #89caff;
+  --color-secondary-bg: #edf5ff;
+
+  /*Estados */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Tamaños */
+  --font-size-xs:   0.75rem;   /* 12px */
+  --font-size-sm:   0.875rem;  /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md:   1.125rem;  /* 18px */
+  --font-size-lg:   1.25rem;   /* 20px */
+  --font-size-xl:   1.5rem;    /* 24px */
+  --font-size-2xl:  1.875rem;  /* 30px */
+  --font-size-3xl:  2.25rem;   /* 36px */
+
+  /* Bordes */
+  --border-radius: 8px;
+  --border-radius-sm: 4px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+body {
+    font-family: Roboto;
+}   

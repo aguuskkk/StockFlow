@@ -1,0 +1,113 @@
+/* ===============================================
+            CSS DE AYUDA
+================================================**/
+
+.ayuda-header {
+    display: flex;
+    align-items: center; justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ayuda-header a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+}   
+
+.btn-volver span {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+}
+
+.ayuda-main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.ayuda-contenido {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ayuda-contenido h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.ayuda-subtitulo {
+    font-size: var(--font-size-md);
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.ayuda-desplegable {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 3px 6px -1px rgba(58, 58, 58, 0.1);
+    overflow: hidden;
+}
+
+.ayuda-desplegable summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: #1a1a1a;
+    cursor: pointer;
+    list-style: none;
+    transition: all 0.2s ease;
+}
+
+.ayuda-desplegable summary::-webkit-details-marker {
+    display: none;
+}
+
+.ayuda-desplegable summary i {
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
+}
+
+.ayuda-desplegable summary::after {
+    content: "+";
+    margin-left: auto;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.ayuda-desplegable[open] summary::after {
+    content: "-";
+}
+
+.ayuda-desplegable summary:hover {
+    background-color: #f7fafc;
+}
+
+.ayuda-texto {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.ayuda-texto p {
+    font-size: var(--font-size-sm);
+    color: #4a5568;
+    line-height: 1.6;
+}

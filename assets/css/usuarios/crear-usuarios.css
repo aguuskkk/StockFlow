@@ -1,0 +1,102 @@
+.header-crear-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.header-crear-usuario a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-crear-usuario a:hover {
+    text-decoration: underline;
+}
+
+.header-crear-usuario i {
+    font-size: 1.5rem;
+}
+
+.header-crear-usuario span {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-crear-usuario {
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+
+.form-crear-usuario h1 {
+    padding: 1rem;
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.form-nombre-usuario, .form-email-usuario,
+.form-contraseña-usuario, .form-rol-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-nombre-usuario input, .form-email-usuario input,
+.form-contraseña-usuario input, .form-rol-usuario input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.form-nombre-usuario select, .form-rol-usuario select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.form-nombre-usuario label, .form-email-usuario label,
+.form-contraseña-usuario label, .form-rol-usuario label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.btn-crear-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+} 
+
+.btn-crear-usuario i {
+    font-size: 1rem;
+} 
+
+.btn-crear-usuario span {
+    font-size: 1.5rem;
+}
+
+.btn-crear-usuario:hover {
+    filter: brightness(1.1);
+}
